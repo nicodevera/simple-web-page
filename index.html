@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreWithUs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="#" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a>
+      <a href="#" onclick="showSection('about')"><i class="fas fa-info-circle"></i> About</a>
+      <a href="#" onclick="showSection('services')"><i class="fas fa-concierge-bell"></i> Services</a>
+      <a href="#" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+    <div class="nav-right">
+      <input type="text" id="searchBar" placeholder="Search...">
+    </div>
+  </nav>
 
-    <!-- Left-side Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="javascript:void(0);" onclick="showSection('home')">Home</a></li>
-            <li><a href="javascript:void(0);" onclick="showSection('about')">About</a></li>
-            <li><a href="javascript:void(0);" onclick="showSection('services')">Services</a></li>
-            <li><a href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content Area -->
-    <div class="content">
-        <!-- Home Section -->
-        <div id="home" class="section">
-            <h1>Welcome to Our Website!</h1>
-            <p>We are thrilled to have you here. Our website is designed to provide you with valuable information about our business and services. Take a look at the various sections to learn more about what we offer.</p>
-            <p>Explore our site and don't hesitate to reach out if you have any questions!</p>
-        </div>
-
-        <!-- About Section -->
-        <div id="about" class="section" style="display: none;">
-            <h2>About Us</h2>
-            <p>We are a passionate team dedicated to providing the best services in the industry. Our goal is to help businesses thrive by offering innovative solutions and support.</p>
-            <p>Founded in 2020, we have already helped hundreds of businesses improve their operations and reach their full potential.</p>
-            <p>Our mission is simple: to provide high-quality services with a focus on customer satisfaction. We believe in building long-term relationships with our clients.</p>
-        </div>
-
-        <!-- Services Section -->
-        <div id="services" class="section" style="display: none;">
-            <h2>Our Services</h2>
-            <p>We offer a wide range of services designed to help businesses grow and succeed. Here are some of the key services we provide:</p>
-            <ul>
-                <li><strong>Consulting:</strong> Tailored business consulting to help you make the best decisions for your company.</li>
-                <li><strong>Web Design:</strong> Professional website design services to give your business a strong online presence.</li>
-                <li><strong>Marketing Strategy:</strong> Comprehensive marketing strategies to increase your visibility and attract more customers.</li>
-                <li><strong>Software Development:</strong> Custom software solutions to streamline your business operations.</li>
-                <li><strong>Customer Support:</strong> 24/7 customer support to ensure your business runs smoothly.</li>
-            </ul>
-        </div>
-
-        <!-- Contact Section -->
-        <div id="contact" class="section" style="display: none;">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, or if you are interested in learning more about our services, feel free to reach out to us!</p>
-            <p>You can contact us through the following methods:</p>
-            <ul>
-                <li><strong>Email:</strong> contact@ourbusiness.com</li>
-                <li><strong>Phone:</strong> (123) 456-7890</li>
-                <li><strong>Address:</strong> 123 Business Ave, City, Country</li>
-            </ul>
-            <p>We look forward to hearing from you!</p>
-        </div>
-        
-        <!-- Image and Button -->
-        <img src="image-ex.jpg" alt="Business & Services Illustration" class="business-image">
-        <button id="alertButton">Click Me!</button>
+  <div class="content">
+    <div id="home" class="section active">
+      <h1>Welcome to ExploreWithUs!</h1>
+      <p>Discover innovative services, engaging content, and a team dedicated to helping you grow.</p>
+      <img src="imagee.jpg" class="hero" alt="Explore With Us Illustration"> <br><br>
+      <button onclick="alert('Thanks for exploring with us!')">Click Me!</button>
     </div>
 
-    <!-- JavaScript File -->
-    <script src="script.js"></script>
+    <div id="about" class="section">
+      <h2>About Us</h2>
+      <p>We're a dynamic team delivering premium digital solutions to businesses worldwide. With a focus on creativity and results, we’re committed to your success.</p>
+      <img src="https://source.unsplash.com/800x400/?office,creative" class="hero" alt="Creative Workspace">
+    </div>
+
+    <div id="services" class="section">
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>🧠 Consulting:</strong> Smart strategies for business growth.</li>
+        <li><strong>🎨 Web Design:</strong> Modern, responsive, and beautiful websites.</li>
+        <li><strong>📈 Marketing:</strong> Data-driven campaigns that convert.</li>
+        <li><strong>💻 Development:</strong> Custom software tailored to your needs.</li>
+        <li><strong>💬 Support:</strong> We're here 24/7 for you and your clients.</li>
+      </ul>
+      <img src="https://source.unsplash.com/800x400/?services,technology" class="hero" alt="Tech Services">
+    </div>
+
+    <div id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to work with us? Reach out!</p>
+      <ul>
+        <li><strong>Email:</strong> hello@explorewithus.com</li>
+        <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+        <li><strong>Location:</strong> 456 Innovation Drive, Tech City</li>
+      </ul>
+      <img src="https://source.unsplash.com/800x400/?contact,communication" class="hero" alt="Contact Us">
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
+
 </html>
